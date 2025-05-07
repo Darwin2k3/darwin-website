@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Darwin - Trang cá nhân</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 50px 20px;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
+    }
+
+    .social {
+      margin-top: 30px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      border-bottom: 1px solid white;
+    }
+
+    footer {
+      position: relative;
+      z-index: 2;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <img src="https://i.pravatar.cc/150?img=13" alt="Darwin Avatar" class="avatar">
+    <h1>Xin chào, mình là Darwin</h1>
+    <p>
+      Mình là một người yêu công nghệ, thích học hỏi và chia sẻ kiến thức.<br>
+      Trang web này là nơi mình lưu trữ một chút thông tin cá nhân và liên hệ.
+    </p>
+
+    <div class="social">
+      <a href="mailto:darwin@email.com">Email</a>
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+
+    <footer>
+      © 2025 Darwin. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
